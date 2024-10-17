@@ -5,6 +5,16 @@
 This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and Morty API to fetch and display information about characters, locations, and episodes from the beloved animated series. 
 It utilizes the SDWebImage library for efficient image loading and caching.
 
+### App Screenshots
+<p>
+   <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.08.06.png", width="150" hspace="4"/>
+   <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.08.44.png", width="150" hspace="4"/>
+   <img src="https://github.com/Huss3n/RickAndMortySwiftUI/blob/main/screenshots/episode.png", width="150" hspace="4"/>
+   <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.08.53.png", width="150" hspace="4"/>
+   <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.04.png", width="150" hspace="4"/>
+  <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.11.pnghttps://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.11.png", width="150" hspace="4"/>
+</p>
+
 ### Features
 - Character Listing: Browse through a comprehensive list of Rick and Morty characters, including their names, species, and images.
 - Filtering: Filter characters based on their status (Alive, Dead, Unknown).
