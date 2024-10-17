@@ -11,7 +11,7 @@ It utilizes the SDWebImage library for efficient image loading and caching.
    <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.08.44.png", width="150" hspace="4"/>
    <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.08.53.png", width="150" hspace="4"/>
    <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.04.png", width="150" hspace="4"/>
-  <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.11.pnghttps://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.11.png", width="150" hspace="4"/>
+  <img src="https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%20SE%20(3rd%20generation)%20-%202024-10-17%20at%2021.09.11.png", width="150" hspace="4"/>
 </p>
 
 ### Features
