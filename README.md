@@ -6,9 +6,9 @@ This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and
 It utilizes the SDWebImage library for efficient image loading and caching.
 
 ### Features
-- Character Listing: Browse through a comprehensive list of Rick and Morty characters, including their names, statuses, species, genders, and images.
+- Character Listing: Browse through a comprehensive list of Rick and Morty characters, including their names, species, and images.
 - Filtering: Filter characters based on their status (Alive, Dead, Unknown).
-- Character Detail: View details about individual characters, including their names, statuses, species, genders, and images.
+- Character Detail: View details about individual characters, including their names, statuses, species, genders, locations and images.
 
 
 ### Built with:
