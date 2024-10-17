@@ -28,7 +28,7 @@ It utilizes the KingFisher library for efficient image loading and management. I
 
 ### Getting Started:
 
-- Clone the Repository: Use git clone to clone this repository.
+- Clone the Repository: Use git clone ``` https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI.git ``` to clone this repository.
 - Install Dependencies: Run pod install in your terminal to install the required CocoaPods dependency (KingFisher, etc).
 - Run the App: Open the project in Xcode and run the app on your desired iOS device or simulator.
 
