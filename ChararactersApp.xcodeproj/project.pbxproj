@@ -369,7 +369,7 @@
 			mainGroup = ED39C85C2CBD45EC003445F7;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */,
+				ED32F3CD2CC1891200173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */,
 			);
 			productRefGroup = ED39C8662CBD45EC003445F7 /* Products */;
 			projectDirPath = "";
@@ -904,6 +904,14 @@
 
 /* Begin XCRemoteSwiftPackageReference section */
 		ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		ED32F3CD2CC1891200173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
 			requirement = {
