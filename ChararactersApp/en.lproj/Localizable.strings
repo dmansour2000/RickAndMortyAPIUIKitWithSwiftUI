@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ChararactersApp
+
+  Created by Dina Mansour  on 14/10/2024.
+  
+*/
+
+//Messages
+"successTitle" = "Success";
+"errorTitle" = "Error";
+"tryAgain" = "Please try again later";
+"noNetworkConnected" = "Please make sure you are connected to the internet";

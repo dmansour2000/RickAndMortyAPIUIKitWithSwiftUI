@@ -1,0 +1,6 @@
+framework module Pods_ChararactersApp_ChararactersAppUITests {
+  umbrella header "Pods-ChararactersApp-ChararactersAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

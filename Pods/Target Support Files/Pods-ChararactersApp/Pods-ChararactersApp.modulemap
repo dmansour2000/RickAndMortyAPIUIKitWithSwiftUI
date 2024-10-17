@@ -1,0 +1,6 @@
+framework module Pods_ChararactersApp {
+  umbrella header "Pods-ChararactersApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
