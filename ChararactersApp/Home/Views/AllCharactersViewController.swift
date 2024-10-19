@@ -18,6 +18,8 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate {
     @IBOutlet weak var deadButton: UIButton!
     @IBOutlet weak var aliveButton: UIButton!
     
+    var savedStated  = "none"
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var dialogFullScreenView: UIView?
@@ -59,7 +61,15 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate {
             Task.detached {
                 if await self.isNetworkConnected() {
                     await self.showProgressDialog()
-                await self.fetchCharacters()
+                    if await self.savedStated == "none" {
+                        await self.fetchCharacters()
+                    } else if await self.savedStated == "Alive" {
+                        await self.fetchAliveCharacters()
+                    }else if await self.savedStated == "Dead" {
+                        await self.fetchDeadCharacters()
+                    }else if await self.savedStated == "Unknown" {
+                        await self.fetchUnknownCharacters()
+                    }
                     await self.hideProgressDialog()
                 }else{
                     await self.showErrorMessage(Utils.localizedString(forKey:"noNetworkConnected"))
@@ -76,6 +86,24 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate {
         } catch (let error) {
           print(error)
         }
+    }
+    
+    func fetchAliveCharacters() async {
+            characters = charactersVm.filteredCharacters(filter: .alive)
+             self.collectionView.reloadData()
+        
+    }
+    
+    func fetchDeadCharacters() async {
+            characters = charactersVm.filteredCharacters(filter: .dead)
+             self.collectionView.reloadData()
+        
+    }
+    
+    func fetchUnknownCharacters() async {
+        characters = charactersVm.filteredCharacters(filter: .unknown)
+             self.collectionView.reloadData()
+        
     }
     
     
@@ -144,9 +172,11 @@ extension AllCharactersViewController: UICollectionViewDelegate, UICollectionVie
 
   
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        let vc = UIHostingController(rootView: CharacterDetailSwiftUIView(rmClient: rmClient, index: indexPath.row, characters: characters ))
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        var view = CharacterDetailSwiftUIView(rmClient: rmClient, index: indexPath.row, characters: characters)
+        view.presentingVC = self
+        let hostingVC = UIHostingController(rootView: view )
+        present(hostingVC, animated: true, completion: nil)
       
         }
    
@@ -201,6 +231,13 @@ extension AllCharactersViewController: UICollectionViewDelegate, UICollectionVie
         
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                            layout collectionViewLayout: UICollectionViewLayout,
+                            sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let kHeight = 128
+            return CGSizeMake(collectionView.bounds.size.width, CGFloat(kHeight))
     }
     
 }

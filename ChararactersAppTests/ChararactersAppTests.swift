@@ -27,8 +27,10 @@ struct ChararactersAppTests {
                     print("🦸 Character: \($0.name)")
                 }
                 expectation.fulfill()
-            assert = true
             }
+        if expectation.expectedFulfillmentCount == 1 {
+            assert = true
+        }
         XCTAssertTrue(assert)
               
         }
@@ -42,7 +44,9 @@ struct ChararactersAppTests {
                            print("🦸 Character: \($0.name)")
                        }
             expectation.fulfill()
+        if expectation.expectedFulfillmentCount == 1 {
             assert = true
+        }
         
           
         XCTAssertTrue(assert)

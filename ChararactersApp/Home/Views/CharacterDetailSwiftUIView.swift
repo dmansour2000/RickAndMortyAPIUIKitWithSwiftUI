@@ -15,7 +15,7 @@ struct CharacterDetailSwiftUIView: View {
     var rmClient = RMClient()
     var index: Int = 0
     var characters: [RMCharacterModel] = []
-    
+    var presentingVC = AllCharactersViewController()
    
     
     var body: some View {
@@ -50,7 +50,15 @@ struct CharacterDetailSwiftUIView: View {
                                 
                             }
                             Button(action: {
-                                self.presentationMode.wrappedValue.dismiss()
+                                
+                                if characters[index].status == "Alive" {
+                                    presentingVC.savedStated = "Alive"
+                                }else if characters[index].status == "Dead" {
+                                    presentingVC.savedStated = "Dead"
+                                }else if characters[index].status == "unknown" {
+                                    presentingVC.savedStated = "unknown"
+                                }
+                                self.presentingVC.presentedViewController?.dismiss(animated: true)
                             }) {
                                 Image(systemName: "arrow.backward").padding()
                                     .aspectRatio(contentMode: .fit)
@@ -60,7 +68,7 @@ struct CharacterDetailSwiftUIView: View {
                                             .fill(.white)
                                     )
                                     .padding(.horizontal, 8)
-                                    .padding(.vertical, 20)
+                                    .padding(.vertical, 30)
                             }
                             
                         }
