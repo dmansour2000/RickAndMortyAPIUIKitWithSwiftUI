@@ -6,16 +6,12 @@
 //
 
 import SwiftUI
-import RickMortySwiftApi
-import Kingfisher
+import SDWebImageSwiftUI
 
 struct CharacterDetailSwiftUIView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var path = NavigationPath()
-    var rmClient = RMClient()
-    var index: Int = 0
-    var characters: [RMCharacterModel] = []
-    var presentingVC = AllCharactersViewController()
+    var characters: CharacterDetailViewModel = CharacterDetailViewModel(name: "Morty", image: "https://picsum.photos/id/27/200/300", species: "Human", gender: "Male", status: "Alive", location: "Earth")
    
     
     var body: some View {
@@ -27,18 +23,10 @@ struct CharacterDetailSwiftUIView: View {
                         ZStack(alignment: .topLeading) {
                             
                             
-                            if URL(string: characters[index].image) != nil {
-                                KFImage(URL(string: characters[index].image))
+                            if URL(string: characters.image) != nil {
+                                WebImage(url: URL(string: characters.image))
                                     .cancelOnDisappear(true)
-                                    .placeholder {
-                                    ZStack {
-                                        Color(.black)
-                                            Image("morty")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fill)
-                                            .layoutPriority(-1)
-                                                                }
-                                                            }
+                                    
                                     .resizable()
                                     .frame(height: 300)
                                     .frame(maxWidth: .infinity)
@@ -51,14 +39,11 @@ struct CharacterDetailSwiftUIView: View {
                             }
                             Button(action: {
                                 
-                                if characters[index].status == "Alive" {
-                                    presentingVC.savedStated = "Alive"
-                                }else if characters[index].status == "Dead" {
-                                    presentingVC.savedStated = "Dead"
-                                }else if characters[index].status == "unknown" {
-                                    presentingVC.savedStated = "unknown"
-                                }
-                                self.presentingVC.presentedViewController?.dismiss(animated: true)
+                                self.presentationMode.wrappedValue.dismiss()
+                                                   
+                                
+                                
+                           
                             }) {
                                 Image(systemName: "arrow.backward").padding()
                                     .aspectRatio(contentMode: .fit)
@@ -75,10 +60,10 @@ struct CharacterDetailSwiftUIView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack(alignment: .top, spacing: 150) {
                                 
-                                Text(characters[index].name)
+                                Text(characters.name)
                                     .font(.title2.bold())
                                     .padding(.horizontal, 8)
-                                Text(characters[index].status)
+                                Text(characters.status)
                                     .font(.callout)
                                     .background(
                                         RoundedRectangle(cornerRadius: 5.0)
@@ -95,7 +80,7 @@ struct CharacterDetailSwiftUIView: View {
                             
                             HStack {
                                 
-                                Text(characters[index].species)
+                                Text(characters.species)
                                     .font(.title2)
                                     .foregroundStyle(Color(.systemGray))
                                     .padding(.horizontal, 8)
@@ -105,7 +90,7 @@ struct CharacterDetailSwiftUIView: View {
                                     .foregroundStyle(Color(.systemGray))
                                 
                                 
-                                Text(characters[index].gender)
+                                Text(characters.gender)
                                     .font(.title2)
                                     .foregroundStyle(Color(.systemGray))
                                 
@@ -118,7 +103,7 @@ struct CharacterDetailSwiftUIView: View {
                                     .bold()
                                     .padding(.horizontal, 8)
                                 
-                                Text(characters[index].location.name)
+                                Text(characters.location)
                                     .font(.title3)
                                 
                             }

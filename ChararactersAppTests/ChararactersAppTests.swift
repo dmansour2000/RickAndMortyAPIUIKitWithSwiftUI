@@ -7,13 +7,11 @@
 
 import Testing
 import Combine
-import RickMortySwiftApi
 @testable import ChararactersApp
 import XCTest
 
 struct ChararactersAppTests {
 
-    let client = RMClient()
     var charactersVm = CharacterService()
     var cancellable: AnyCancellable?
     
@@ -21,13 +19,12 @@ struct ChararactersAppTests {
             
             let expectation = XCTestExpectation(description: "Request all characters")
             var assert = false
-        Task.detached {
-                let characters = try await client.character().getAllCharacters()
-                characters.forEach {
-                    print("🦸 Character: \($0.name)")
-                }
+        let characters = charactersVm.characters
+        characters.forEach {
+            print("🦸 Character: \($0.name)")
+        }
                 expectation.fulfill()
-            }
+
         if expectation.expectedFulfillmentCount == 1 {
             assert = true
         }

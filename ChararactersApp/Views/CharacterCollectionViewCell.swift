@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var view: UIView!
@@ -13,11 +14,14 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var species: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var elfimage: UIImageView!
+    
+   
 
     
     override init(frame: CGRect) {
           super.init(frame: frame)
-          commonInit()
+            commonInit()
+        
       }
         
         required init?(coder: NSCoder) {
@@ -31,6 +35,9 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         
         private func commonInit() {
            
+        
         }
+    
+ 
   
 }

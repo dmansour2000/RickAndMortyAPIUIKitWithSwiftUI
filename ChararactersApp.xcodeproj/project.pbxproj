@@ -10,10 +10,12 @@
 		2EC7CED0D2FB7A3C99E02426 /* Pods_ChararactersApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A07A640D21EC51B47213A2D /* Pods_ChararactersApp.framework */; };
 		3946CFBD6A949A15F51406EB /* Pods_ChararactersAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE90A24F912BE06F5C4EF836 /* Pods_ChararactersAppTests.framework */; };
 		88D495A565043AEDCC690C2D /* Pods_ChararactersApp_ChararactersAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B592B01CD6AAEB15CAB468F8 /* Pods_ChararactersApp_ChararactersAppUITests.framework */; };
-		ED32F3C62CC139A700173CE3 /* RickMortySwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3C52CC139A700173CE3 /* RickMortySwiftApi */; };
-		ED32F3C82CC1785700173CE3 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F3C72CC1785700173CE3 /* AppExtensions.swift */; };
-		ED32F3CA2CC17F0000173CE3 /* RickMortySwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3C92CC17F0000173CE3 /* RickMortySwiftApi */; };
-		ED32F3CC2CC17FA100173CE3 /* RickMortySwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3CB2CC17FA100173CE3 /* RickMortySwiftApi */; };
+		ED32F3D02CC50CCE00173CE3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F3CF2CC50CC700173CE3 /* NetworkManager.swift */; };
+		ED32F3D32CC50D5C00173CE3 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F3D22CC50D5800173CE3 /* Characters.swift */; };
+		ED32F3D62CC50E3300173CE3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3D52CC50E3300173CE3 /* SDWebImageSwiftUI */; };
+		ED32F3D92CC50E7000173CE3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3D82CC50E7000173CE3 /* SDWebImage */; };
+		ED32F3DC2CC51B7900173CE3 /* Pagination in Frameworks */ = {isa = PBXBuildFile; productRef = ED32F3DB2CC51B7900173CE3 /* Pagination */; };
+		ED32F3E02CC52A1300173CE3 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F3DF2CC52A0100173CE3 /* CharacterDetailViewModel.swift */; };
 		ED34FC472CC0ED5D005A9EF8 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34FC462CC0ED53005A9EF8 /* CharacterService.swift */; };
 		ED34FC492CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34FC482CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift */; };
 		ED39C8E52CBD8AE4003445F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED39C8DB2CBD8AE4003445F7 /* Assets.xcassets */; };
@@ -23,22 +25,26 @@
 		ED39C8F12CBD8AE9003445F7 /* ChararactersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39C8EF2CBD8AE9003445F7 /* ChararactersAppTests.swift */; };
 		ED39C8F52CBD8AED003445F7 /* ChararactersAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39C8F22CBD8AED003445F7 /* ChararactersAppUITests.swift */; };
 		ED39C8F62CBD8AED003445F7 /* ChararactersAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39C8F32CBD8AED003445F7 /* ChararactersAppUITestsLaunchTests.swift */; };
-		ED43CDC52CBD8E3400AA15CF /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CDBB2CBD8E3400AA15CF /* UIHelper.swift */; };
-		ED43CE092CBEBB7B00AA15CF /* STZhiHuLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE042CBEBB7B00AA15CF /* STZhiHuLoading.swift */; };
-		ED43CE0A2CBEBB7B00AA15CF /* STGlassesLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CDFF2CBEBB7B00AA15CF /* STGlassesLoading.swift */; };
-		ED43CE0B2CBEBB7B00AA15CF /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE072CBEBB7B00AA15CF /* STLoadingGroup.swift */; };
-		ED43CE0C2CBEBB7B00AA15CF /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CDFE2CBEBB7B00AA15CF /* STBouncyPreloaderLoading.swift */; };
-		ED43CE0D2CBEBB7B00AA15CF /* STTriangleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE022CBEBB7B00AA15CF /* STTriangleLoading.swift */; };
-		ED43CE0E2CBEBB7B00AA15CF /* STSubmitLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE012CBEBB7B00AA15CF /* STSubmitLoading.swift */; };
-		ED43CE0F2CBEBB7B00AA15CF /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE062CBEBB7B00AA15CF /* STLoadingable.swift */; };
-		ED43CE102CBEBB7B00AA15CF /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CDFD2CBEBB7B00AA15CF /* STArchLoading.swift */; };
-		ED43CE112CBEBB7B00AA15CF /* STWalkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE032CBEBB7B00AA15CF /* STWalkLoading.swift */; };
-		ED43CE122CBEBB7B00AA15CF /* STPacManLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE002CBEBB7B00AA15CF /* STPacManLoading.swift */; };
-		ED43CE142CBEBC9F00AA15CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE132CBEBC9B00AA15CF /* Utils.swift */; };
 		ED43CE172CBFE96D00AA15CF /* AllCharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED43CE162CBFE96D00AA15CF /* AllCharactersViewController.xib */; };
 		ED43CE182CBFE96D00AA15CF /* AllCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE152CBFE96D00AA15CF /* AllCharactersViewController.swift */; };
 		ED43CE1B2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */; };
 		ED43CE1C2CBFFECE00AA15CF /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */; };
+		EDC77C212CC59F35002F735F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C202CC59F21002F735F /* Constants.swift */; };
+		EDC77C392CC60C7E002F735F /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2E2CC60C7E002F735F /* STLoadingable.swift */; };
+		EDC77C3A2CC60C7E002F735F /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C312CC60C7E002F735F /* AppExtensions.swift */; };
+		EDC77C3B2CC60C7E002F735F /* STTriangleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2A2CC60C7E002F735F /* STTriangleLoading.swift */; };
+		EDC77C3E2CC60C7E002F735F /* STWalkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2B2CC60C7E002F735F /* STWalkLoading.swift */; };
+		EDC77C402CC60C7E002F735F /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C362CC60C7E002F735F /* UIHelper.swift */; };
+		EDC77C412CC60C7E002F735F /* STGlassesLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C272CC60C7E002F735F /* STGlassesLoading.swift */; };
+		EDC77C432CC60C7E002F735F /* STPacManLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C282CC60C7E002F735F /* STPacManLoading.swift */; };
+		EDC77C442CC60C7E002F735F /* STZhiHuLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2C2CC60C7E002F735F /* STZhiHuLoading.swift */; };
+		EDC77C462CC60C7E002F735F /* STSubmitLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C292CC60C7E002F735F /* STSubmitLoading.swift */; };
+		EDC77C472CC60C7E002F735F /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C262CC60C7E002F735F /* STBouncyPreloaderLoading.swift */; };
+		EDC77C482CC60C7E002F735F /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2F2CC60C7E002F735F /* STLoadingGroup.swift */; };
+		EDC77C492CC60C7E002F735F /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C252CC60C7E002F735F /* STArchLoading.swift */; };
+		EDC77C4B2CC60D40002F735F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C4A2CC60D40002F735F /* Utils.swift */; };
+		EDC77C562CC63D09002F735F /* FilteredCharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */; };
+		EDC77C572CC63D09002F735F /* FilteredCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +75,9 @@
 		B592B01CD6AAEB15CAB468F8 /* Pods_ChararactersApp_ChararactersAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChararactersApp_ChararactersAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE90A24F912BE06F5C4EF836 /* Pods_ChararactersAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChararactersAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2B57B82CC05D4C00B04E85 /* rick-morty-swift-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "rick-morty-swift-api"; path = "/Users/dabdelkareem2000/Library/Developer/Xcode/DerivedData/ChararactersApp-affutkaqwyruwndyioptlyfhyfzj/SourcePackages/checkouts/rick-morty-swift-api"; sourceTree = "<absolute>"; };
-		ED32F3C72CC1785700173CE3 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		ED32F3CF2CC50CC700173CE3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ED32F3D22CC50D5800173CE3 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		ED32F3DF2CC52A0100173CE3 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		ED34FC462CC0ED53005A9EF8 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		ED34FC482CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailSwiftUIView.swift; sourceTree = "<group>"; };
 		ED39C8652CBD45EC003445F7 /* ChararactersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChararactersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,22 +91,26 @@
 		ED39C8EF2CBD8AE9003445F7 /* ChararactersAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChararactersAppTests.swift; sourceTree = "<group>"; };
 		ED39C8F22CBD8AED003445F7 /* ChararactersAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChararactersAppUITests.swift; sourceTree = "<group>"; };
 		ED39C8F32CBD8AED003445F7 /* ChararactersAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChararactersAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		ED43CDBB2CBD8E3400AA15CF /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
-		ED43CDFD2CBEBB7B00AA15CF /* STArchLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STArchLoading.swift; sourceTree = "<group>"; };
-		ED43CDFE2CBEBB7B00AA15CF /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
-		ED43CDFF2CBEBB7B00AA15CF /* STGlassesLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGlassesLoading.swift; sourceTree = "<group>"; };
-		ED43CE002CBEBB7B00AA15CF /* STPacManLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPacManLoading.swift; sourceTree = "<group>"; };
-		ED43CE012CBEBB7B00AA15CF /* STSubmitLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSubmitLoading.swift; sourceTree = "<group>"; };
-		ED43CE022CBEBB7B00AA15CF /* STTriangleLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTriangleLoading.swift; sourceTree = "<group>"; };
-		ED43CE032CBEBB7B00AA15CF /* STWalkLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STWalkLoading.swift; sourceTree = "<group>"; };
-		ED43CE042CBEBB7B00AA15CF /* STZhiHuLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STZhiHuLoading.swift; sourceTree = "<group>"; };
-		ED43CE062CBEBB7B00AA15CF /* STLoadingable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLoadingable.swift; sourceTree = "<group>"; };
-		ED43CE072CBEBB7B00AA15CF /* STLoadingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLoadingGroup.swift; sourceTree = "<group>"; };
-		ED43CE132CBEBC9B00AA15CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		ED43CE152CBFE96D00AA15CF /* AllCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersViewController.swift; sourceTree = "<group>"; };
 		ED43CE162CBFE96D00AA15CF /* AllCharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCharactersViewController.xib; sourceTree = "<group>"; };
 		ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		EDC77C202CC59F21002F735F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EDC77C252CC60C7E002F735F /* STArchLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STArchLoading.swift; sourceTree = "<group>"; };
+		EDC77C262CC60C7E002F735F /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
+		EDC77C272CC60C7E002F735F /* STGlassesLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGlassesLoading.swift; sourceTree = "<group>"; };
+		EDC77C282CC60C7E002F735F /* STPacManLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPacManLoading.swift; sourceTree = "<group>"; };
+		EDC77C292CC60C7E002F735F /* STSubmitLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSubmitLoading.swift; sourceTree = "<group>"; };
+		EDC77C2A2CC60C7E002F735F /* STTriangleLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTriangleLoading.swift; sourceTree = "<group>"; };
+		EDC77C2B2CC60C7E002F735F /* STWalkLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STWalkLoading.swift; sourceTree = "<group>"; };
+		EDC77C2C2CC60C7E002F735F /* STZhiHuLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STZhiHuLoading.swift; sourceTree = "<group>"; };
+		EDC77C2E2CC60C7E002F735F /* STLoadingable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLoadingable.swift; sourceTree = "<group>"; };
+		EDC77C2F2CC60C7E002F735F /* STLoadingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLoadingGroup.swift; sourceTree = "<group>"; };
+		EDC77C312CC60C7E002F735F /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		EDC77C362CC60C7E002F735F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		EDC77C4A2CC60D40002F735F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredCharactersViewController.swift; sourceTree = "<group>"; };
+		EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilteredCharactersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +118,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED32F3C62CC139A700173CE3 /* RickMortySwiftApi in Frameworks */,
+				ED32F3DC2CC51B7900173CE3 /* Pagination in Frameworks */,
+				ED32F3D92CC50E7000173CE3 /* SDWebImage in Frameworks */,
+				ED32F3D62CC50E3300173CE3 /* SDWebImageSwiftUI in Frameworks */,
 				2EC7CED0D2FB7A3C99E02426 /* Pods_ChararactersApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED32F3CA2CC17F0000173CE3 /* RickMortySwiftApi in Frameworks */,
 				3946CFBD6A949A15F51406EB /* Pods_ChararactersAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +137,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED32F3CC2CC17FA100173CE3 /* RickMortySwiftApi in Frameworks */,
 				88D495A565043AEDCC690C2D /* Pods_ChararactersApp_ChararactersAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +168,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED32F3CE2CC50CB400173CE3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED32F3CF2CC50CC700173CE3 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED32F3D12CC50D4F00173CE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED32F3D22CC50D5800173CE3 /* Characters.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ED34FC452CC0ED04005A9EF8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ED32F3DF2CC52A0100173CE3 /* CharacterDetailViewModel.swift */,
 				ED34FC462CC0ED53005A9EF8 /* CharacterService.swift */,
 			);
 			path = ViewModel;
@@ -194,25 +223,22 @@
 				ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */,
 				ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */,
 				ED34FC482CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift */,
+				EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */,
+				EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		ED39C8D62CBD8AE4003445F7 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				ED34FC452CC0ED04005A9EF8 /* ViewModel */,
-				ED39C8D42CBD8AE4003445F7 /* Views */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		ED39C8E32CBD8AE4003445F7 /* ChararactersApp */ = {
 			isa = PBXGroup;
 			children = (
-				ED43CDBD2CBD8E3400AA15CF /* AppUtils */,
-				ED39C8D62CBD8AE4003445F7 /* Home */,
+				EDC77C382CC60C7E002F735F /* AppUtils */,
+				ED32F3CE2CC50CB400173CE3 /* Network */,
+				ED32F3D12CC50D4F00173CE3 /* Model */,
+				ED39C8D42CBD8AE4003445F7 /* Views */,
+				ED34FC452CC0ED04005A9EF8 /* ViewModel */,
 				ED39C8DA2CBD8AE4003445F7 /* AppDelegate.swift */,
+				EDC77C202CC59F21002F735F /* Constants.swift */,
 				ED39C8DB2CBD8AE4003445F7 /* Assets.xcassets */,
 				ED39C8DD2CBD8AE4003445F7 /* Info.plist */,
 				ED39C8DF2CBD8AE4003445F7 /* LaunchScreen.storyboard */,
@@ -238,40 +264,40 @@
 			path = ChararactersAppUITests;
 			sourceTree = "<group>";
 		};
-		ED43CDBD2CBD8E3400AA15CF /* AppUtils */ = {
+		EDC77C2D2CC60C7E002F735F /* Loading */ = {
 			isa = PBXGroup;
 			children = (
-				ED43CE082CBEBB7B00AA15CF /* LoadingBar */,
-				ED43CE132CBEBC9B00AA15CF /* Utils.swift */,
-				ED32F3C72CC1785700173CE3 /* AppExtensions.swift */,
-				ED43CDBB2CBD8E3400AA15CF /* UIHelper.swift */,
-			);
-			path = AppUtils;
-			sourceTree = "<group>";
-		};
-		ED43CE052CBEBB7B00AA15CF /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				ED43CDFD2CBEBB7B00AA15CF /* STArchLoading.swift */,
-				ED43CDFE2CBEBB7B00AA15CF /* STBouncyPreloaderLoading.swift */,
-				ED43CDFF2CBEBB7B00AA15CF /* STGlassesLoading.swift */,
-				ED43CE002CBEBB7B00AA15CF /* STPacManLoading.swift */,
-				ED43CE012CBEBB7B00AA15CF /* STSubmitLoading.swift */,
-				ED43CE022CBEBB7B00AA15CF /* STTriangleLoading.swift */,
-				ED43CE032CBEBB7B00AA15CF /* STWalkLoading.swift */,
-				ED43CE042CBEBB7B00AA15CF /* STZhiHuLoading.swift */,
+				EDC77C252CC60C7E002F735F /* STArchLoading.swift */,
+				EDC77C262CC60C7E002F735F /* STBouncyPreloaderLoading.swift */,
+				EDC77C272CC60C7E002F735F /* STGlassesLoading.swift */,
+				EDC77C282CC60C7E002F735F /* STPacManLoading.swift */,
+				EDC77C292CC60C7E002F735F /* STSubmitLoading.swift */,
+				EDC77C2A2CC60C7E002F735F /* STTriangleLoading.swift */,
+				EDC77C2B2CC60C7E002F735F /* STWalkLoading.swift */,
+				EDC77C2C2CC60C7E002F735F /* STZhiHuLoading.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
 		};
-		ED43CE082CBEBB7B00AA15CF /* LoadingBar */ = {
+		EDC77C302CC60C7E002F735F /* LoadingBar */ = {
 			isa = PBXGroup;
 			children = (
-				ED43CE052CBEBB7B00AA15CF /* Loading */,
-				ED43CE062CBEBB7B00AA15CF /* STLoadingable.swift */,
-				ED43CE072CBEBB7B00AA15CF /* STLoadingGroup.swift */,
+				EDC77C2D2CC60C7E002F735F /* Loading */,
+				EDC77C2E2CC60C7E002F735F /* STLoadingable.swift */,
+				EDC77C2F2CC60C7E002F735F /* STLoadingGroup.swift */,
 			);
 			path = LoadingBar;
+			sourceTree = "<group>";
+		};
+		EDC77C382CC60C7E002F735F /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EDC77C302CC60C7E002F735F /* LoadingBar */,
+				EDC77C312CC60C7E002F735F /* AppExtensions.swift */,
+				EDC77C362CC60C7E002F735F /* UIHelper.swift */,
+				EDC77C4A2CC60D40002F735F /* Utils.swift */,
+			);
+			path = AppUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +395,9 @@
 			mainGroup = ED39C85C2CBD45EC003445F7;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ED32F3CD2CC1891200173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */,
+				ED32F3D42CC50DC200173CE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				ED32F3D72CC50E6100173CE3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				ED32F3DA2CC51B6F00173CE3 /* XCRemoteSwiftPackageReference "swift-pagination" */,
 			);
 			productRefGroup = ED39C8662CBD45EC003445F7 /* Products */;
 			projectDirPath = "";
@@ -390,6 +418,7 @@
 				ED39C8E52CBD8AE4003445F7 /* Assets.xcassets in Resources */,
 				ED39C8E72CBD8AE4003445F7 /* LaunchScreen.storyboard in Resources */,
 				ED43CE172CBFE96D00AA15CF /* AllCharactersViewController.xib in Resources */,
+				EDC77C562CC63D09002F735F /* FilteredCharactersViewController.xib in Resources */,
 				ED43CE1B2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib in Resources */,
 				ED39C8E82CBD8AE4003445F7 /* Localizable.strings in Resources */,
 			);
@@ -519,24 +548,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC77C212CC59F35002F735F /* Constants.swift in Sources */,
+				ED32F3D02CC50CCE00173CE3 /* NetworkManager.swift in Sources */,
 				ED43CE1C2CBFFECE00AA15CF /* CharacterCollectionViewCell.swift in Sources */,
 				ED43CE182CBFE96D00AA15CF /* AllCharactersViewController.swift in Sources */,
-				ED43CE092CBEBB7B00AA15CF /* STZhiHuLoading.swift in Sources */,
-				ED43CE0A2CBEBB7B00AA15CF /* STGlassesLoading.swift in Sources */,
-				ED43CE0B2CBEBB7B00AA15CF /* STLoadingGroup.swift in Sources */,
-				ED43CE0C2CBEBB7B00AA15CF /* STBouncyPreloaderLoading.swift in Sources */,
-				ED43CE0D2CBEBB7B00AA15CF /* STTriangleLoading.swift in Sources */,
-				ED43CE0E2CBEBB7B00AA15CF /* STSubmitLoading.swift in Sources */,
-				ED43CE0F2CBEBB7B00AA15CF /* STLoadingable.swift in Sources */,
-				ED32F3C82CC1785700173CE3 /* AppExtensions.swift in Sources */,
-				ED43CE102CBEBB7B00AA15CF /* STArchLoading.swift in Sources */,
-				ED43CE112CBEBB7B00AA15CF /* STWalkLoading.swift in Sources */,
-				ED43CE122CBEBB7B00AA15CF /* STPacManLoading.swift in Sources */,
+				EDC77C392CC60C7E002F735F /* STLoadingable.swift in Sources */,
+				EDC77C3A2CC60C7E002F735F /* AppExtensions.swift in Sources */,
+				EDC77C572CC63D09002F735F /* FilteredCharactersViewController.swift in Sources */,
+				EDC77C3B2CC60C7E002F735F /* STTriangleLoading.swift in Sources */,
+				EDC77C4B2CC60D40002F735F /* Utils.swift in Sources */,
+				EDC77C3E2CC60C7E002F735F /* STWalkLoading.swift in Sources */,
+				EDC77C402CC60C7E002F735F /* UIHelper.swift in Sources */,
+				EDC77C412CC60C7E002F735F /* STGlassesLoading.swift in Sources */,
+				EDC77C432CC60C7E002F735F /* STPacManLoading.swift in Sources */,
+				EDC77C442CC60C7E002F735F /* STZhiHuLoading.swift in Sources */,
+				EDC77C462CC60C7E002F735F /* STSubmitLoading.swift in Sources */,
+				EDC77C472CC60C7E002F735F /* STBouncyPreloaderLoading.swift in Sources */,
+				EDC77C482CC60C7E002F735F /* STLoadingGroup.swift in Sources */,
+				EDC77C492CC60C7E002F735F /* STArchLoading.swift in Sources */,
 				ED39C8EC2CBD8AE4003445F7 /* AppDelegate.swift in Sources */,
-				ED43CDC52CBD8E3400AA15CF /* UIHelper.swift in Sources */,
+				ED32F3E02CC52A1300173CE3 /* CharacterDetailViewModel.swift in Sources */,
 				ED34FC492CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift in Sources */,
-				ED43CE142CBEBC9F00AA15CF /* Utils.swift in Sources */,
 				ED34FC472CC0ED5D005A9EF8 /* CharacterService.swift in Sources */,
+				ED32F3D32CC50D5C00173CE3 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,39 +937,47 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */ = {
+		ED32F3D42CC50DC200173CE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
 			};
 		};
-		ED32F3CD2CC1891200173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */ = {
+		ED32F3D72CC50E6100173CE3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
+		ED32F3DA2CC51B6F00173CE3 /* XCRemoteSwiftPackageReference "swift-pagination" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grighakobian/swift-pagination";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ED32F3C52CC139A700173CE3 /* RickMortySwiftApi */ = {
+		ED32F3D52CC50E3300173CE3 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */;
-			productName = RickMortySwiftApi;
+			package = ED32F3D42CC50DC200173CE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
-		ED32F3C92CC17F0000173CE3 /* RickMortySwiftApi */ = {
+		ED32F3D82CC50E7000173CE3 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */;
-			productName = RickMortySwiftApi;
+			package = ED32F3D72CC50E6100173CE3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
-		ED32F3CB2CC17FA100173CE3 /* RickMortySwiftApi */ = {
+		ED32F3DB2CC51B7900173CE3 /* Pagination */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ED32F3C42CC1399900173CE3 /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */;
-			productName = RickMortySwiftApi;
+			package = ED32F3DA2CC51B6F00173CE3 /* XCRemoteSwiftPackageReference "swift-pagination" */;
+			productName = Pagination;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

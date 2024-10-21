@@ -11,6 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
          
@@ -20,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             
                  //Initialize MainNavigationController
-        let homeViewController = AllCharactersViewController(nibName: "AllCharactersViewController", bundle: nil)
-             let rootNC = UINavigationController(rootViewController: homeViewController)
-                     self.window?.rootViewController = rootNC
+        let mainViewController = AllCharactersViewController(nibName: "AllCharactersViewController", bundle: nil)
+        let navigationController = UINavigationController.init(rootViewController: mainViewController)
+        self.window?.rootViewController = navigationController
                      self.window?.makeKeyAndVisible()
                
              

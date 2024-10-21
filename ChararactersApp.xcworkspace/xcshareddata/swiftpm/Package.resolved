@@ -1,13 +1,31 @@
 {
-  "originHash" : "cd5b847a31a90983c66d09d5aeae28cc8645a67aac8d308b773ad7773d65b425",
+  "originHash" : "670a906fcc5b55d171f2e492e0bf1f38c3b4dd8ee60e7d79404462811b67c958",
   "pins" : [
     {
-      "identity" : "rick-morty-swift-api",
+      "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/benjaminbruch/rick-morty-swift-api",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c7e165e61d746cd82fb0dda5e796323224af90e2"
+        "revision" : "8a1be70a625683bc04d6903e2935bf23f3c6d609",
+        "version" : "5.19.7"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
+      "state" : {
+        "revision" : "5aa947356f4ea49a0c3b9968564267f6ea5abea7",
+        "version" : "3.1.2"
+      }
+    },
+    {
+      "identity" : "swift-pagination",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grighakobian/swift-pagination",
+      "state" : {
+        "revision" : "ad9b08b98257c612f213ee8fc6dd177b699bbab5",
+        "version" : "1.0.0"
       }
     }
   ],
