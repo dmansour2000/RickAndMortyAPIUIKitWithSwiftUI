@@ -29,7 +29,7 @@ This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and
 ### Getting Started:
 
 - Download (from the green button above) or Clone the Repository: Use git clone ``` https://github.com/dmansour2000/RickAndMortyAPIUIKitWithSwiftUI.git ``` to clone this repository.
-- Run the App: Open the project (ChararactersApp.xcworkspace) in Apple's Xcode Program and run the app (using the play button) on your desired iOS device or simulator.
+- Run the App: Open the project (ChararactersApp.xcworkspace) in Apple's Xcode Program and run the app (using the play button) on your desired iOS device or Xcode simulator.
 
 
 ### Contributing:
