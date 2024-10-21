@@ -2,8 +2,7 @@
  
  ### Description
 
-This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and Morty API to fetch and display information about characters, locations, and episodes from the beloved animated series. 
-It utilizes the KingFisher library for efficient image loading and management. It also includes a few unit tests for the service.
+This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and Morty API to fetch and display information about characters, locations, and episodes from the beloved animated series. It includes a few unit tests for the service. It utilizes the SDWebImage library for efficient image loading and caching.
 
 ### App Screenshots
 <p>
@@ -24,7 +23,7 @@ It utilizes the KingFisher library for efficient image loading and management. I
 
 - SwiftUI: Apple's modern UI framework for building declarative and reactive user interfaces.
 - Rick and Morty API: The official API providing data about characters, locations, and episodes. (https://rickandmortyapi.com/)
-- KingFisher: A popular Swift library for asynchronous image downloading, and management. 
+- SDWebImage: A popular Swift library for asynchronous image downloading, caching, and management. (https://github.com/SDWebImage/SDWebImageSwiftUI)
 
 ### Getting Started:
 
