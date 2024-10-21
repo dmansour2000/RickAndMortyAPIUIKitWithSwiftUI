@@ -55,6 +55,12 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate{
             let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: "charactersviewcell", for: indexPath)
             as! CharacterCollectionViewCell
+            
+            cell.gender = characterViewModel.gender
+            cell.location = characterViewModel.location
+            cell.status = characterViewModel.status
+            cell.imageURL = characterViewModel.image
+            
             if characterViewModel.image != "" {
                 let imageurl = URL(string: characterViewModel.image)
                 if ((imageurl) != nil){
@@ -252,13 +258,15 @@ extension AllCharactersViewController: UICollectionViewDelegate, UICollectionVie
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item < characters.count {
-            var view = CharacterDetailSwiftUIView()
-            view.characters = CharacterDetailViewModel(name: characters[indexPath.item].name, image: characters[indexPath.item].image, species: characters[indexPath.item].species, gender: characters[indexPath.item].gender.rawValue, status: characters[indexPath.item].status.rawValue, location: characters[indexPath.item].location.name)
-            let hostingVC = UIHostingController(rootView: view )
-            present(hostingVC, animated: true, completion: nil)
-        }
         
+        if let cell = collectionView.cellForItem(at: indexPath) as? CharacterCollectionViewCell {
+            var view = CharacterDetailSwiftUIView()
+            view.character = CharacterDetailViewModel(name: cell.name.text!, image: cell.imageURL, species: cell.species.text!, gender: cell.gender, status: cell.status, location: cell.location)
+            let hostingVC = UIHostingController(rootView: view )
+            present(hostingVC, animated: true, completion: nil) }
+        else {
+            return
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -272,6 +280,10 @@ extension AllCharactersViewController: UICollectionViewDelegate, UICollectionVie
         var cell : CharacterCollectionViewCell
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: "charactersviewcell", for: indexPath) as! CharacterCollectionViewCell
         
+        cell.gender = characters[indexPath.row].gender.rawValue
+        cell.location = characters[indexPath.row].location.name
+        cell.status = characters[indexPath.row].status.rawValue
+        cell.imageURL = characters[indexPath.row].image
         
         if characters[indexPath.row].image != "" {
             let imageurl = URL(string: characters[indexPath.row].image)

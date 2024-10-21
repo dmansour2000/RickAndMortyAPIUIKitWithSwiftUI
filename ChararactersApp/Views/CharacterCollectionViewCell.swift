@@ -14,6 +14,10 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var species: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var elfimage: UIImageView!
+    var gender: String!
+    var location: String!
+    var status: String!
+    var imageURL: String!
     
    
 

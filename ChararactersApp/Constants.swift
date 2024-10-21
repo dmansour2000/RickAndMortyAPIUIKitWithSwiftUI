@@ -9,7 +9,7 @@ import Foundation
 
 struct Constants {
     
-    static let baseURL = "https://rickandmortyapi.com/api/"
+    static let baseURL = "https://rickandmortyapi.com/api"
     
     static let characters = "/character"
     

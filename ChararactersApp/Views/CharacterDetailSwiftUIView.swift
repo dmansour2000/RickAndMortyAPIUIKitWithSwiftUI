@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 struct CharacterDetailSwiftUIView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var path = NavigationPath()
-    var characters: CharacterDetailViewModel = CharacterDetailViewModel(name: "Morty", image: "https://picsum.photos/id/27/200/300", species: "Human", gender: "Male", status: "Alive", location: "Earth")
+    var character: CharacterDetailViewModel = CharacterDetailViewModel(name: "Morty", image: "https://picsum.photos/id/27/200/300", species: "Human", gender: "Male", status: "Alive", location: "Earth")
     
     
     var body: some View {
@@ -23,8 +23,8 @@ struct CharacterDetailSwiftUIView: View {
                         ZStack(alignment: .topLeading) {
                             
                             
-                            if URL(string: characters.image) != nil {
-                                WebImage(url: URL(string: characters.image))
+                            if URL(string: character.image) != nil {
+                                WebImage(url: URL(string: character.image))
                                     .cancelOnDisappear(true)
                                 
                                     .resizable()
@@ -60,10 +60,10 @@ struct CharacterDetailSwiftUIView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack(alignment: .top, spacing: 150) {
                                 
-                                Text(characters.name)
+                                Text(character.name)
                                     .font(.title2.bold())
                                     .padding(.horizontal, 8)
-                                Text(characters.status)
+                                Text(character.status)
                                     .font(.callout)
                                     .background(
                                         RoundedRectangle(cornerRadius: 5.0)
@@ -80,7 +80,7 @@ struct CharacterDetailSwiftUIView: View {
                             
                             HStack {
                                 
-                                Text(characters.species)
+                                Text(character.species)
                                     .font(.title2)
                                     .foregroundStyle(Color(.systemGray))
                                     .padding(.horizontal, 8)
@@ -90,7 +90,7 @@ struct CharacterDetailSwiftUIView: View {
                                     .foregroundStyle(Color(.systemGray))
                                 
                                 
-                                Text(characters.gender)
+                                Text(character.gender)
                                     .font(.title2)
                                     .foregroundStyle(Color(.systemGray))
                                 
@@ -103,7 +103,7 @@ struct CharacterDetailSwiftUIView: View {
                                     .bold()
                                     .padding(.horizontal, 8)
                                 
-                                Text(characters.location)
+                                Text(character.location)
                                     .font(.title3)
                                 
                             }

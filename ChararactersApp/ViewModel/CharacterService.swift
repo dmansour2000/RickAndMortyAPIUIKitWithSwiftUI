@@ -7,15 +7,6 @@
 
 import Foundation
 import Combine
-import SwiftUI
-
-protocol MoviesService: AnyObject {
-  /// Get a list of the current popular movies on TMDB.
-  /// - Parameter page: Specify which page to query.
-  ///                   Validation: minimum: 1, maximum: 1000, default: 1
-  func getPaginatedCharacters(page: Int) async throws -> CharactersResult
-func getPaginatedFilteredCharacters(page: Int, statusFilter: Status) async throws -> CharactersResult
-}
 
 final class CharacterService: ObservableObject {
     // be responsible for character fetctes made

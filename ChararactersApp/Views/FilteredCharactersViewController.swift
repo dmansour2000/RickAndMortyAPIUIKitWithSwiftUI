@@ -56,6 +56,12 @@ class FilteredCharactersViewController: UIViewController, UINavigationBarDelegat
             let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: "charactersviewcell", for: indexPath)
             as! CharacterCollectionViewCell
+            
+            cell.gender = characterViewModel.gender
+            cell.location = characterViewModel.location
+            cell.status = characterViewModel.status
+            cell.imageURL = characterViewModel.image
+            
             if characterViewModel.image != "" {
                 let imageurl = URL(string: characterViewModel.image)
                 if ((imageurl) != nil){
@@ -257,12 +263,13 @@ extension FilteredCharactersViewController: UICollectionViewDelegate, UICollecti
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item < characters.count {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CharacterCollectionViewCell {
             var view = CharacterDetailSwiftUIView()
-            view.characters = CharacterDetailViewModel(name: characters[indexPath.item].name, image: characters[indexPath.item].image, species: characters[indexPath.item].species, gender: characters[indexPath.item].gender.rawValue, status: characters[indexPath.item].status.rawValue, location: characters[indexPath.item].location.name)
+            view.character = CharacterDetailViewModel(name: cell.name.text!, image: cell.imageURL, species: cell.species.text!, gender: cell.gender, status: cell.status, location: cell.location)
             let hostingVC = UIHostingController(rootView: view )
-            present(hostingVC, animated: true, completion: nil)
-            
+            present(hostingVC, animated: true, completion: nil) }
+        else {
+            return
         }
     }
     
@@ -277,6 +284,10 @@ extension FilteredCharactersViewController: UICollectionViewDelegate, UICollecti
         var cell : CharacterCollectionViewCell
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: "charactersviewcell", for: indexPath) as! CharacterCollectionViewCell
         
+        cell.gender = characters[indexPath.row].gender.rawValue
+        cell.location = characters[indexPath.row].location.name
+        cell.status = characters[indexPath.row].status.rawValue
+        cell.imageURL = characters[indexPath.row].image
         
         if characters[indexPath.row].image != "" {
             let imageurl = URL(string: characters[indexPath.row].image)
