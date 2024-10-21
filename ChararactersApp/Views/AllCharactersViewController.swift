@@ -252,11 +252,12 @@ extension AllCharactersViewController: UICollectionViewDelegate, UICollectionVie
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        var view = CharacterDetailSwiftUIView()
-        view.characters = CharacterDetailViewModel(name: characters[indexPath.item].name, image: characters[indexPath.item].image, species: characters[indexPath.item].species, gender: characters[indexPath.item].gender.rawValue, status: characters[indexPath.item].status.rawValue, location: characters[indexPath.item].location.name)
-        let hostingVC = UIHostingController(rootView: view )
-        present(hostingVC, animated: true, completion: nil)
+        if indexPath.item < characters.count {
+            var view = CharacterDetailSwiftUIView()
+            view.characters = CharacterDetailViewModel(name: characters[indexPath.item].name, image: characters[indexPath.item].image, species: characters[indexPath.item].species, gender: characters[indexPath.item].gender.rawValue, status: characters[indexPath.item].status.rawValue, location: characters[indexPath.item].location.name)
+            let hostingVC = UIHostingController(rootView: view )
+            present(hostingVC, animated: true, completion: nil)
+        }
         
     }
     
