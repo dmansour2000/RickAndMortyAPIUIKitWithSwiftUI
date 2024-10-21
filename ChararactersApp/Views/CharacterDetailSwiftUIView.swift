@@ -12,7 +12,7 @@ struct CharacterDetailSwiftUIView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var path = NavigationPath()
     var characters: CharacterDetailViewModel = CharacterDetailViewModel(name: "Morty", image: "https://picsum.photos/id/27/200/300", species: "Human", gender: "Male", status: "Alive", location: "Earth")
-   
+    
     
     var body: some View {
         NavigationStack {
@@ -26,24 +26,24 @@ struct CharacterDetailSwiftUIView: View {
                             if URL(string: characters.image) != nil {
                                 WebImage(url: URL(string: characters.image))
                                     .cancelOnDisappear(true)
-                                    
+                                
                                     .resizable()
                                     .frame(height: 300)
                                     .frame(maxWidth: .infinity)
                                     .aspectRatio(contentMode: .fill)
                                     .cornerRadius(35.0)
-                                    
-                                                   
+                                
+                                
                                 
                                 
                             }
                             Button(action: {
                                 
                                 self.presentationMode.wrappedValue.dismiss()
-                                                   
                                 
                                 
-                           
+                                
+                                
                             }) {
                                 Image(systemName: "arrow.backward").padding()
                                     .aspectRatio(contentMode: .fit)
@@ -114,16 +114,16 @@ struct CharacterDetailSwiftUIView: View {
                 .edgesIgnoringSafeArea(.top)
                 .preferredColorScheme(.light)
             }
-              
-            }
-        .navigationBarHidden(true)
-     
+            
         }
+        .navigationBarHidden(true)
         
     }
-        
-        
-        
+    
+}
+
+
+
 
 #Preview {
     CharacterDetailSwiftUIView()
