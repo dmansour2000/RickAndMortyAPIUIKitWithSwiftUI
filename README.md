@@ -2,7 +2,7 @@
  
  ### Description
 
-This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and Morty API to fetch and display information about characters, locations, and episodes from the beloved animated series. It includes a few unit tests for the service. It utilizes the SDWebImage library for efficient image loading and caching.
+This native iOS mobile app, built with UIKit and SwiftUI, leverages the Rick and Morty API using Combine to fetch and display information about characters, locations, and episodes from the beloved animated series. It includes a few unit tests for the service. It utilizes the SDWebImage library for efficient image loading and caching.
 
 ### App Screenshots
 <p>
