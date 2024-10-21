@@ -1,6 +1,5 @@
 PODS:
   - Cartography (4.0.0)
-  - Kingfisher (8.1.0)
   - Localize-Swift (3.2.0):
     - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
     - Localize-Swift/UIKit (= 3.2.0)
@@ -14,7 +13,6 @@ PODS:
 
 DEPENDENCIES:
   - Cartography
-  - Kingfisher
   - Localize-Swift
   - ReachabilitySwift
   - SwiftMessages
@@ -22,18 +20,16 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Cartography
-    - Kingfisher
     - Localize-Swift
     - ReachabilitySwift
     - SwiftMessages
 
 SPEC CHECKSUMS:
   Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
-  Kingfisher: dfbf20b6249ed4ef6f18d6a96c847bce860bdb95
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   SwiftMessages: 759b4a0bf5c3a116a0d7e8a34b098ba83c458625
 
-PODFILE CHECKSUM: 51400f74c9ae16e64a3827dd703364dcd793094b
+PODFILE CHECKSUM: 460f2b780e0b100e01abfbc6c8f78496c6fa6b42
 
 COCOAPODS: 1.15.2

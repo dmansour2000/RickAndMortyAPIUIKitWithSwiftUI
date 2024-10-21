@@ -16,9 +16,6 @@ pod 'ReachabilitySwift'
 # Layout Constraints
 pod 'Cartography'
 
-#Image Downloader
-pod 'Kingfisher'
-
 #Localization
 pod 'Localize-Swift'
 
