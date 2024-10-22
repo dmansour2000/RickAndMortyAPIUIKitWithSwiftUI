@@ -27,15 +27,9 @@ final class CharacterService: ObservableObject {
         guard let url1 = URL(string: Constants.baseURL + Constants.characters + "/?page=1") else { return [] }
         guard let url2 = URL(string: Constants.baseURL + Constants.characters + "/?page=2") else { return []}
         guard let url3 = URL(string: Constants.baseURL + Constants.characters + "/?page=3") else { return []}
-        guard let url4 = URL(string: Constants.baseURL + Constants.characters + "/?page=4") else { return [] }
-        guard let url5 = URL(string: Constants.baseURL + Constants.characters + "/?page=5") else { return []}
-        guard let url6 = URL(string: Constants.baseURL + Constants.characters + "/?page=6") else { return []}
-        guard let url7 = URL(string: Constants.baseURL + Constants.characters + "/?page=7") else { return []}
-        guard let url8 = URL(string: Constants.baseURL + Constants.characters + "/?page=8") else { return []}
-        guard let url9 = URL(string: Constants.baseURL + Constants.characters + "/?page=9") else { return []}
-        guard let url10 = URL(string: Constants.baseURL + Constants.characters + "/?page=10") else { return []}
+
         
-        let publishers = [url1,url2,url3,url4,url5,url6,url7,url8,url9,url10].map { url in
+        let publishers = [url1,url2,url3].map { url in
             URLSession.shared.dataTaskPublisher(for: url)
                 .receive(on: DispatchQueue.main)
                 .tryMap(downloadData)
