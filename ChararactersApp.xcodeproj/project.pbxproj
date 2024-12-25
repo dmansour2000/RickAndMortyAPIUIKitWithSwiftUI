@@ -29,6 +29,7 @@
 		ED43CE182CBFE96D00AA15CF /* AllCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE152CBFE96D00AA15CF /* AllCharactersViewController.swift */; };
 		ED43CE1B2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */; };
 		ED43CE1C2CBFFECE00AA15CF /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */; };
+		ED8882C92D1CAF360067A437 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8882C82D1CAF360067A437 /* Utils.swift */; };
 		EDC77C212CC59F35002F735F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C202CC59F21002F735F /* Constants.swift */; };
 		EDC77C392CC60C7E002F735F /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2E2CC60C7E002F735F /* STLoadingable.swift */; };
 		EDC77C3A2CC60C7E002F735F /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C312CC60C7E002F735F /* AppExtensions.swift */; };
@@ -42,9 +43,6 @@
 		EDC77C472CC60C7E002F735F /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C262CC60C7E002F735F /* STBouncyPreloaderLoading.swift */; };
 		EDC77C482CC60C7E002F735F /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C2F2CC60C7E002F735F /* STLoadingGroup.swift */; };
 		EDC77C492CC60C7E002F735F /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C252CC60C7E002F735F /* STArchLoading.swift */; };
-		EDC77C4B2CC60D40002F735F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C4A2CC60D40002F735F /* Utils.swift */; };
-		EDC77C562CC63D09002F735F /* FilteredCharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */; };
-		EDC77C572CC63D09002F735F /* FilteredCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +93,7 @@
 		ED43CE162CBFE96D00AA15CF /* AllCharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCharactersViewController.xib; sourceTree = "<group>"; };
 		ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		ED8882C82D1CAF360067A437 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EDC77C202CC59F21002F735F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EDC77C252CC60C7E002F735F /* STArchLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STArchLoading.swift; sourceTree = "<group>"; };
 		EDC77C262CC60C7E002F735F /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
@@ -108,9 +107,6 @@
 		EDC77C2F2CC60C7E002F735F /* STLoadingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLoadingGroup.swift; sourceTree = "<group>"; };
 		EDC77C312CC60C7E002F735F /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 		EDC77C362CC60C7E002F735F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
-		EDC77C4A2CC60D40002F735F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredCharactersViewController.swift; sourceTree = "<group>"; };
-		EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilteredCharactersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,8 +219,6 @@
 				ED43CE192CBFFECE00AA15CF /* CharacterCollectionViewCell.swift */,
 				ED43CE1A2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib */,
 				ED34FC482CC0F257005A9EF8 /* CharacterDetailSwiftUIView.swift */,
-				EDC77C542CC63D09002F735F /* FilteredCharactersViewController.swift */,
-				EDC77C552CC63D09002F735F /* FilteredCharactersViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,8 +288,8 @@
 			children = (
 				EDC77C302CC60C7E002F735F /* LoadingBar */,
 				EDC77C312CC60C7E002F735F /* AppExtensions.swift */,
+				ED8882C82D1CAF360067A437 /* Utils.swift */,
 				EDC77C362CC60C7E002F735F /* UIHelper.swift */,
-				EDC77C4A2CC60D40002F735F /* Utils.swift */,
 			);
 			path = AppUtils;
 			sourceTree = "<group>";
@@ -418,7 +412,6 @@
 				ED39C8E52CBD8AE4003445F7 /* Assets.xcassets in Resources */,
 				ED39C8E72CBD8AE4003445F7 /* LaunchScreen.storyboard in Resources */,
 				ED43CE172CBFE96D00AA15CF /* AllCharactersViewController.xib in Resources */,
-				EDC77C562CC63D09002F735F /* FilteredCharactersViewController.xib in Resources */,
 				ED43CE1B2CBFFECE00AA15CF /* CharacterCollectionViewCell.xib in Resources */,
 				ED39C8E82CBD8AE4003445F7 /* Localizable.strings in Resources */,
 			);
@@ -554,9 +547,8 @@
 				ED43CE182CBFE96D00AA15CF /* AllCharactersViewController.swift in Sources */,
 				EDC77C392CC60C7E002F735F /* STLoadingable.swift in Sources */,
 				EDC77C3A2CC60C7E002F735F /* AppExtensions.swift in Sources */,
-				EDC77C572CC63D09002F735F /* FilteredCharactersViewController.swift in Sources */,
 				EDC77C3B2CC60C7E002F735F /* STTriangleLoading.swift in Sources */,
-				EDC77C4B2CC60D40002F735F /* Utils.swift in Sources */,
+				ED8882C92D1CAF360067A437 /* Utils.swift in Sources */,
 				EDC77C3E2CC60C7E002F735F /* STWalkLoading.swift in Sources */,
 				EDC77C402CC60C7E002F735F /* UIHelper.swift in Sources */,
 				EDC77C412CC60C7E002F735F /* STGlassesLoading.swift in Sources */,

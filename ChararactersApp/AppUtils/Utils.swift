@@ -11,10 +11,9 @@ import Localize_Swift
 
 class Utils {
     
- 
     
     public static func localizedString(forKey key: String) -> String {
-        Localize.setCurrentLanguage("ar")
+        Localize.setCurrentLanguage("en")
         let resutl = key.localized(using: "Localization", in: .main)
         return resutl;
     }

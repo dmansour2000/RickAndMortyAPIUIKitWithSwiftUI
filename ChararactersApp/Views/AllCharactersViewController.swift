@@ -183,9 +183,9 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate{
         
         self.characters = self.characterService.filteredCharacters(filter: .alive)
         self.savedState = "Alive"
-        let filteredVC = FilteredCharactersViewController(nibName: "FilteredCharactersViewController", bundle: nil)
+        let filteredVC = AllCharactersViewController(nibName: "AllCharactersViewController", bundle: nil)
         filteredVC.savedState = self.savedState
-        self.navigationController?.pushViewController(filteredVC, animated: true)
+        self.navigationController?.pushViewController(filteredVC, animated: true) 
         
         
     }
@@ -195,7 +195,7 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate{
         
         self.characters = self.characterService.filteredCharacters(filter: .dead)
         self.savedState = "Dead"
-        let filteredVC = FilteredCharactersViewController(nibName: "FilteredCharactersViewController", bundle: nil)
+        let filteredVC = AllCharactersViewController(nibName: "AllCharactersViewController", bundle: nil)
         filteredVC.savedState = self.savedState
         self.navigationController?.pushViewController(filteredVC, animated: true)
         
@@ -206,7 +206,7 @@ class AllCharactersViewController: UIViewController, UINavigationBarDelegate{
         
         self.characters = self.characterService.filteredCharacters(filter: .unknown)
         self.savedState = "Unknown"
-        let filteredVC = FilteredCharactersViewController(nibName: "FilteredCharactersViewController", bundle: nil)
+        let filteredVC = AllCharactersViewController(nibName: "AllCharactersViewController", bundle: nil)
         filteredVC.savedState = self.savedState
         self.navigationController?.pushViewController(filteredVC, animated: true)
         
